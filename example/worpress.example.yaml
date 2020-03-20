@@ -1,0 +1,25 @@
+apiVersion:  wordpress.netzlink.com/v1alpha1
+kind:         Wordpress
+metadata:
+  name: netzlink
+spec:
+  externalDatabase:
+    database: netzlink
+    host: wordpressdb-mariadb
+    password: <secret>
+    port: 3306
+    user: netzlink
+  persistence:
+    enabled:      true
+    size:         10Gi
+  resources:
+    requests:
+      cpu:     300m
+  securityContext:
+    enabled: false
+  wordpressBlogName:     User's Blog!
+  wordpressEmail:         user@example.com
+  wordpressFirstName:    FirstName
+  wordpressLastName:     LastName
+  wordpressUsername:      user
+
