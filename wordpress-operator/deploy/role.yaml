@@ -86,7 +86,7 @@ rules:
   verbs:
   - get
 - apiGroups:
-  - wordpress.netzlink.com
+  - wordpress.nk-desig.nz
   resources:
   - '*'
   verbs:

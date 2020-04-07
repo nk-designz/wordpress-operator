@@ -1,5 +1,5 @@
 ---
 - version: v1alpha1
-  group: wordpress.netzlink.com
+  group: wordpress.nk-desig.nz
   kind: Wordpress
   chart: helm-charts/wordpress
