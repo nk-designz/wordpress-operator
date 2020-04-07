@@ -1,5 +1,0 @@
-channels:
-- currentCSV: wordpress-operator.v0.0.1-alpha
-  name: alpha
-defaultChannel: alpha
-packageName: wordpress-operator
