@@ -1,4 +1,4 @@
-![worpress_operator_CI_Prod](https://github.com/nk-designz/wordpress-operator/workflows/worpress_operator_CI_Prod/badge.svg?branch=master)
+![worpress_operator_CI_Prod](https://github.com/nk-designz/wordpress-operator/workflows/worpress_operator_CI_Prod/badge.svg)
 # Wordpress Operator ( working on OpenShift)
 This is an operator for wordpress on K8s build with OpenShift in mind.
 
