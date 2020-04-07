@@ -1,0 +1,40 @@
+name: worpress_operator_CI_Prod
+on:
+ push:
+   branches: [ master ]
+ pull_request:
+   branches: [ master ]
+ schedule:
+   - cron: '0 2 * * *' # Daily at 02:00
+jobs:
+ build:
+   runs-on: ubuntu-latest
+   steps:
+   - uses: actions/checkout@v2
+   - name: get_version
+     run: echo ::set-env name=RELEASE_VERSION::$(echo ${GITHUB_SHA})
+
+   - name: Build test operator version ${{ env.RELEASE_VERSION }}
+     uses: 'Netzlink/build-helm-operator-action@master'
+     id: builder
+     with:
+       repository-name: 'bitnami'
+       repository-address: 'https://charts.bitnami.com/bitnami'
+       chart: 'bitnami/wordpress'
+       project: 'wordpress-operator'
+       kind: 'Wordpress'
+       api-version: 'wordpress.netzlink.com/v1alpha1'
+       container-image: "netzlink/wordpress-operator:${{ env.RELEASE_VERSION }}"
+       
+   - name: Get the output time
+     run: echo "The time was ${{ steps.builder.outputs.time }}"
+     
+   - name: Publish netzlink/wordpress-operator:${{ env.RELEASE_VERSION }}
+     uses: elgohr/Publish-Docker-Github-Action@master
+     with:
+       name: netzlink/wordpress-operator
+       username: ${{ secrets.DOCKER_USERNAME }}
+       password: ${{ secrets.DOCKER_PASSWORD }}
+       dockerfile: ./wordpress-operator/build/Dockerfile
+       context: ./wordpress-operator
+       tags: "latest,${{ env.RELEASE_VERSION }}"
