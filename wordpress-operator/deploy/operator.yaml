@@ -16,7 +16,7 @@ spec:
       containers:
         - name: wordpress-operator
           # Replace this with the built image name
-          image: nicokahlert/wordpress-operator:cb76e2f43f6495794b89b0e6229975a96c631d88
+          image: nicokahlert/wordpress-operator:7e614b8e8487c4ecebfa9747ef45c282bf4cca2e
           imagePullPolicy: Always
           env:
             - name: WATCH_NAMESPACE
