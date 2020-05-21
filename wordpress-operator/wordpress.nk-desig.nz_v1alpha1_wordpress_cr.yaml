@@ -9,6 +9,8 @@ spec:
   allowEmptyPassword: true
   allowOverrideNone: false
   customHTAccessCM: null
+  customLivenessProbe: {}
+  customReadinessProbe: {}
   externalDatabase:
     database: bitnami_wordpress
     host: localhost
@@ -25,7 +27,7 @@ spec:
     pullPolicy: IfNotPresent
     registry: docker.io
     repository: bitnami/wordpress
-    tag: 5.4.1-debian-10-r15
+    tag: 5.4.1-debian-10-r19
   ingress:
     annotations: {}
     certManager: false
@@ -60,7 +62,7 @@ spec:
       pullPolicy: IfNotPresent
       registry: docker.io
       repository: bitnami/apache-exporter
-      tag: 0.8.0-debian-10-r47
+      tag: 0.8.0-debian-10-r50
     podAnnotations:
       prometheus.io/port: "9117"
       prometheus.io/scrape: "true"
