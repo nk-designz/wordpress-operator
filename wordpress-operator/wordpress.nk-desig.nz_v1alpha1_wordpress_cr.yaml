@@ -27,13 +27,14 @@ spec:
     pullPolicy: IfNotPresent
     registry: docker.io
     repository: bitnami/wordpress
-    tag: 5.4.1-debian-10-r19
+    tag: 5.4.1-debian-10-r20
   ingress:
     annotations: {}
     certManager: false
     enabled: false
     hostname: wordpress.local
     secrets: []
+    tls: false
   initContainers: {}
   livenessProbe:
     enabled: true
