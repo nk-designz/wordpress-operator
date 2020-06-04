@@ -27,7 +27,7 @@ spec:
     pullPolicy: IfNotPresent
     registry: docker.io
     repository: bitnami/wordpress
-    tag: 5.4.1-debian-10-r34
+    tag: 5.4.1-debian-10-r35
   ingress:
     annotations: {}
     certManager: false
@@ -63,7 +63,7 @@ spec:
       pullPolicy: IfNotPresent
       registry: docker.io
       repository: bitnami/apache-exporter
-      tag: 0.8.0-debian-10-r62
+      tag: 0.8.0-debian-10-r63
     podAnnotations:
       prometheus.io/port: "9117"
       prometheus.io/scrape: "true"
