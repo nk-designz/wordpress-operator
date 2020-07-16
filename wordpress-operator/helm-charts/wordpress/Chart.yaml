@@ -1,3 +1,5 @@
+annotations:
+  category: CMS
 apiVersion: v1
 appVersion: 5.4.2
 dependencies:
@@ -24,4 +26,4 @@ maintainers:
 name: wordpress
 sources:
 - https://github.com/bitnami/bitnami-docker-wordpress
-version: 9.3.19
+version: 9.3.20
