@@ -1,6 +1,11 @@
 affinity: {}
 allowEmptyPassword: true
 allowOverrideNone: false
+args: []
+clusterDomain: cluster.local
+command: []
+commonAnnotations: {}
+commonLabels: {}
 customHTAccessCM: null
 customLivenessProbe: {}
 customReadinessProbe: {}
