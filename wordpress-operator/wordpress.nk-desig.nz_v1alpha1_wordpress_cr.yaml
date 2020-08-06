@@ -32,7 +32,7 @@ spec:
     pullPolicy: IfNotPresent
     registry: docker.io
     repository: bitnami/wordpress
-    tag: 5.4.2-debian-10-r44
+    tag: 5.4.2-debian-10-r45
   ingress:
     annotations: {}
     certManager: false
