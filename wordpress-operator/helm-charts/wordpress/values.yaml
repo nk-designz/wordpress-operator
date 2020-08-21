@@ -116,6 +116,7 @@ updateStrategy:
   type: RollingUpdate
 wordpressBlogName: User's Blog!
 wordpressEmail: user@example.com
+wordpressExtraConfigContent: ""
 wordpressFirstName: FirstName
 wordpressLastName: LastName
 wordpressScheme: http
