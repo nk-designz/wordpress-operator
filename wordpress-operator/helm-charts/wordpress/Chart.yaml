@@ -10,7 +10,7 @@ dependencies:
   - wordpress-database
   version: 7.x.x
 description: Web publishing platform for building blogs and websites.
-home: http://www.wordpress.com/
+home: https://github.com/bitnami/charts/tree/master/bitnami/wordpress
 icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
 keywords:
 - wordpress
@@ -26,4 +26,5 @@ maintainers:
 name: wordpress
 sources:
 - https://github.com/bitnami/bitnami-docker-wordpress
-version: 9.5.3
+- http://www.wordpress.com/
+version: 9.5.4
