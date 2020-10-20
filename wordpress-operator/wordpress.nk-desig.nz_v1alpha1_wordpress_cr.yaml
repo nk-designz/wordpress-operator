@@ -38,6 +38,7 @@ spec:
     certManager: false
     enabled: false
     hostname: wordpress.local
+    path: /
     secrets: []
     tls: false
   initContainers: {}
