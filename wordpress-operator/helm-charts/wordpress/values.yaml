@@ -80,6 +80,7 @@ persistence:
   enabled: true
   size: 10Gi
 podAnnotations: {}
+podLabels: {}
 readinessProbe:
   enabled: true
   failureThreshold: 6
