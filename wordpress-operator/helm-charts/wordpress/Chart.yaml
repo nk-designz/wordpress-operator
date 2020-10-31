@@ -1,7 +1,7 @@
 annotations:
   category: CMS
 apiVersion: v1
-appVersion: 5.5.1
+appVersion: 5.5.3
 dependencies:
 - condition: mariadb.enabled
   name: mariadb
@@ -27,4 +27,4 @@ name: wordpress
 sources:
 - https://github.com/bitnami/bitnami-docker-wordpress
 - http://www.wordpress.com/
-version: 9.8.4
+version: 9.9.1
